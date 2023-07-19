@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Button = (props) => {
+ 
   const clickedHandle = () => {
     if (props.onClick) {
       props.onClick();

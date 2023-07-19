@@ -1,9 +1,11 @@
 import React,{useState} from "react";
 
+
+
 import Textinput from "./components/Textinput";
 import Button from "./components/button";
 
-const Home = (inputData) => {
+const Home = () => {
   const [email,setEmail] =useState("");
   const [password,setPassword] =useState("");
   const onChangeHandleEmail =(data)=>{
@@ -27,7 +29,7 @@ const Home = (inputData) => {
         <Textinput name="password"  placeholder="please enter your password" onChange={onChangeHandlePassword}/>
       </div>
       <div className="Button">
-        <Button value="Login in" onClick={handleLogin}/>
+        <Button value="Login in" onClick={handleLogin} />
         <Button value="Sign Up" />
       </div>  
    </div>
